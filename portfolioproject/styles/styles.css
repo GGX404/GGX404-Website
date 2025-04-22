@@ -7,6 +7,12 @@
 body {
   font-family: Arial, sans-serif;
 }
+.main {
+  background-color: grey;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 .navbar {
   background-color: #333;
@@ -140,4 +146,42 @@ body {
   .dropdown:hover .dropdown-menu {
     display: none;
   }
+}
+body {
+  background-color: black;
+  background-image: url("../src/resources/star_background.png");
+  margin: 0;
+  padding: 0;
+  background-size: 5%;
+  background-position: 0px;
+  background-repeat: repeat-x repeat-y;
+  -webkit-animation: myanim 1800s infinite linear;
+     -moz-animation: myanim 1800s infinite linear;
+       -o-animation: myanim 1800s infinite linear;
+          animation: myanim 1800s infinite linear;
+}
+p, b, strong, span {
+  margin:0;
+}
+@-webkit-keyframes myanim {
+  0%   { background-position: 0px; }
+  100% { background-position: 50000px; } /* set this to the width of the image */
+}
+@-moz-keyframes myanim {
+  0%   { background-position: 0px; }
+  100% { background-position: 50000px; } /* set this to the width of the image */
+}
+@-o-keyframes myanim {
+  0%   { background-position: 0px; }
+  100% { background-position: 50000px; } /* set this to the width of the image */
+}
+@keyframes myanim {
+  0%   { background-position: 0px; }
+  100% { background-position: 50000px; } /* set this to the width of the image */
+}
+marquee {
+  font-size:30px;
+}
+a:hover {
+  color: grey;
 }
