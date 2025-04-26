@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/navbar.css";
+import "../../../styles/navbar.css"; // Adjust the path as necessary
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

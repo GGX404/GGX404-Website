@@ -1,0 +1,14 @@
+{
+  "fact-checker": {
+    "name": "Fact Checker",
+    "description": "A stain that is applied to wood to enhance the grain and color before applying a finish.",
+    "image": "fact-checker.png",
+    "link": "Fact-checker/fact-checker.html"
+  },
+  "other for test": {
+    "name": "Lesson 1",
+    "description": "A test item for demonstration purposes. If i theoretically fill up this entire area, my code should work.",
+    "image": "star_background.png",
+    "link": "test.html"
+  }
+}

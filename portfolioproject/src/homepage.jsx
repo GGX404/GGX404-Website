@@ -1,10 +1,16 @@
 import { createRoot } from 'react-dom/client';
-import Navbar from './assets/navbar';
+import Navbar from './assets/Components/navbar';
+import ProjectBox from './assets/Components/projectbox';
 createRoot(document.getElementById('root')).render(
     <main>
         <Navbar />
-        <main class="main">
-            <h1>Hello World</h1>
+        
+        <main className="main">
+            <h1>Welcome to My Portfolio</h1>
+
+            <ProjectBox />
         </main>
+       
     </main>
 )
+
