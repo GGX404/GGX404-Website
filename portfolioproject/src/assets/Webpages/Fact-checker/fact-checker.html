@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fact Checker</title>
+    <link rel="stylesheet" href="../../../../styles/styles.css">
+    <script src="factchecker.jsx" type="module"></script>
+
+</head>
+
+<body>
+    <div id="root"></div> <!-- This is where the React app will be rendered -->
+    <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const dropdown = toggle.parentElement;
+          dropdown.classList.toggle("open");
+        }
+      });
+    });
+
+    // Optional: Close dropdowns when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".dropdown")) {
+        document.querySelectorAll(".dropdown.open").forEach(d => d.classList.remove("open"));
+      }
+    });
+    </script>
+</body>
+
+</html>

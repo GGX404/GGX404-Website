@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createRoot } from 'react-dom/client';
+
 const FactChecker = () => {
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState("");
@@ -14,7 +14,7 @@ const FactChecker = () => {
 
     try {
       // Make the main API request
-      const response = await fetch(`/api/query`, {
+      const response = await fetch(`https://us-central1-mainwebsiteggx404.cloudfunctions.net/api`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

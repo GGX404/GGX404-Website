@@ -18,17 +18,19 @@ console.log('GEMINI_API_KEY:', API_KEY);
 
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDnlCXpcRB4eeIhN9sJmNGVipYcJzqWays",
-  authDomain: "ggx404personalpage.firebaseapp.com",
-  projectId: "ggx404personalpage",
-  storageBucket: "ggx404personalpage.appspot.com",
-  messagingSenderId: "6140554430",
-  appId: "1:6140554430:web:6b83417af39b054001c2ef"
+  apiKey: "AIzaSyC5-2G9kDs1c6J8S36L9LsOSYmFqVav3LQ",
+  authDomain: "mainwebsiteggx404.firebaseapp.com",
+  projectId: "mainwebsiteggx404",
+  storageBucket: "mainwebsiteggx404.firebasestorage.app",
+  messagingSenderId: "617960092201",
+  appId: "1:617960092201:web:e37740125b9837a178e238"
 };
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
 console.log('Firebase app initialized');
+
+// Google Auth
 
 // Route to handle queries
 app.post('/api/query', async (req, res) => {
@@ -38,7 +40,7 @@ app.post('/api/query', async (req, res) => {
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({
       model: 'gemini-2.0-flash-thinking-exp',
-      systemInstruction: 'fact check and provide proof. translate the response into HTML text like it was going in a <div>. I only want your answer in the HTML format. provide in plaintext. remove the html definition.'
+      systemInstruction: 'fact check and provide proof. translate the response into HTML text like it was going in a <div>. I only want your answer in the HTML format. provide in plaintext. remove the html definition.',
     });
     const prompt = `${query}.`;
     const result = await model.generateContent(prompt);
