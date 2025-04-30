@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "../../../styles/navbar.css"; // Adjust the path as necessary
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-        <li><a href="#">Home</a></li>
+        <li><Link to="/">Home</Link></li>
 
         <li
           className={`dropdown ${openDropdown === "services" ? "open" : ""}`}
@@ -48,7 +49,7 @@ const Navbar = () => {
             Projects
           </a>
           <ul className="dropdown-menu">
-            <li><a href="#">Fact Checker</a></li>
+            <li><Link to="/fact-checker">Fact Checker</Link></li>
           </ul>
         </li>
 

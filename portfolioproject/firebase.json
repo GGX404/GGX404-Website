@@ -13,11 +13,19 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint"
-      ]
+      ],
+      "timeoutSeconds": 60,
+      "memory": "256MB"
+
     }
   ],
   "hosting": {
-    "public": "build",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "/api/**",

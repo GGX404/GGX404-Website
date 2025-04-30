@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const ProjectBox = ({ data }) => {
     if (!data){
         return <div>Loading...</div>
@@ -8,8 +8,8 @@ const ProjectBox = ({ data }) => {
         <div className="project-box">
             <h2>{data.name || "Project Title"}</h2>
             <p>{data.description || "Description of the project goes here. This is a brief overview of what the project is about."}</p>
-            <a href={`/src/assets/Webpages/${data.link || ""}`} className="project-link">View Project</a>
-            <img src={`../../../public/wresources/${data.image || ""}`} alt={"Project Image"} className="project-image" />
+            <Link to={`${data.link || ""}`} className="project-link">View Project</Link>
+            <img src={`/resources/${data.image || ""}`} alt={"Project Image"} className="project-image" />
         </div>
     );
 };

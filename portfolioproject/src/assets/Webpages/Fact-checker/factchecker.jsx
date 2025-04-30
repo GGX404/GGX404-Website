@@ -14,7 +14,7 @@ const FactChecker = () => {
 
     try {
       // Make the main API request
-      const response = await fetch(`../../../../api/query`, {
+      const response = await fetch(`/api/query`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -73,9 +73,4 @@ const FactChecker = () => {
   );
 };
 
-
-createRoot(document.getElementById('root')).render(
-  <main>
-    <FactChecker />
-  </main>
-);
+export default FactChecker;

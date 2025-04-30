@@ -1,9 +1,8 @@
-const express= require('express');
-const cors  = require('cors');
-const  bodyParser = require('body-parser');
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { initializeApp } = require('firebase/app');
-const { getFirestore } = require('firebase/firestore');
 require('dotenv').config({ path: './key.env' });
 
 const app = express();
@@ -11,6 +10,7 @@ const app = express();
 // Middleware
 app.use(cors({ origin: true }));
 app.use(bodyParser.json());
+app.use(express.json());
 
 // API Key
 const API_KEY = process.env.GEMINI_API_KEY;
@@ -27,11 +27,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 console.log('Firebase app initialized');
-
-// Optional: Initialize Firestore if needed
-const db = getFirestore(firebaseApp);
 
 // Route to handle queries
 app.post('/api/query', async (req, res) => {
