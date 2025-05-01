@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MySite</div>
+      <div className="logo">Chase's Site</div>
 
       <div className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
         <span></span>

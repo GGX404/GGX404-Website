@@ -11,6 +11,9 @@ input.fact-checker {
   border-radius: 10px;
   border-color: #000000;
 }
+div.output-fact-checker {
+  color: #f0f0f0;
+}
 button.fact-checker {
   
     background-color: #4CAF50;

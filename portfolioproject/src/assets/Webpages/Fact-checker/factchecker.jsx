@@ -6,15 +6,14 @@ const FactChecker = () => {
 
   const handleSubmit = async () => {
     const queryReason = document.getElementById("queryReason").value;
-    const queryInput = document.getElementById("queryInput").value;
-    const query = `Reason: ${queryReason} ${queryInput}`;
+    
+    const query = `Reason: ${queryReason}`;
 
     setLoading(true);
     setOutput(""); // Clear previous output
 
     try {
-      // Make the main API request
-      const response = await fetch(`https://us-central1-mainwebsiteggx404.cloudfunctions.net/api`, {
+      const response = await fetch(`https://api-617960092201.us-central1.run.app/api`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,20 +41,12 @@ const FactChecker = () => {
   return (
     <div className="main" style={{ margin: "20px auto", padding: "20px", maxWidth: "600px", textAlign: "center" }}>
       <h1>Fact Checker</h1>
-      <label htmlFor="queryInput">Enter your query:</label>
-      <br />
+      <p>This tool is used to fact check statements from messages. Input your message and AI will show you what was correct and what was false.</p>
+      
       <input
         type="text"
         id="queryReason"
         placeholder="Enter the reason for the query."
-        maxLength="500"
-        className="fact-checker"
-      />
-      <br />
-      <input
-        type="text"
-        id="queryInput"
-        placeholder="Enter the text that was said."
         maxLength="500"
         className="fact-checker"
       />
