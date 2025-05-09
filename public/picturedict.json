@@ -1,7 +1,7 @@
 {
   "fact-checker": {
     "name": "Fact Checker",
-    "description": "A stain that is applied to wood to enhance the grain and color before applying a finish.",
+    "description": "A small project that pulls a Gemini API from a backend server and displays the results in a simple web app.",
     "image": "fact-checker.png",
     "link": "fact-checker"
   },

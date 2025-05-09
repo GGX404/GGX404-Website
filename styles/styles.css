@@ -2,8 +2,46 @@
   box-sizing: border-box;
 }
 
+
+body, .navbar {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, #000000 0%, #434343 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 input.fact-checker {
   width: 80%;
@@ -26,25 +64,57 @@ button.fact-checker {
     border-radius: 10px;
 }
 .main {
-  background-color: grey;
-  margin: 20px;
+  background-color: white;
+  margin: 10px;
   border-radius: 10px;
   padding: 20px;
+  text-align: center;
+}
+#factchecker-p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-factchecker {
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
 }
 .project-image{
   width: 150px;
   border-radius: 10%;
 }
 .project-box {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr; /* 1/6, 1/2, 1/6, 1/6 proportions */
-  grid-template-rows: auto; /* Adjust rows automatically based on content */
-  align-items: center; /* Vertically align content */
-  margin:10px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items */
+  margin: 10px;
   background-color: #f0f0f0; /* Light grey background for the project box */
   border-radius: 10px; /* Rounded corners */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px; /* Add padding for spacing */
+  width: 300px;
+}
+
+.project-box h2,
+.project-box p,
+.project-box a,
+.project-box img {
+  margin: 10px 0; /* Add spacing between elements */
+  text-align: center; /* Center-align text */
+}
+
+.project-box img {
+  max-width: 150px; /* Adjust image size */
+  border-radius: 10%; /* Rounded corners for the image */
 }
 .project-link {
   padding:10px;
@@ -57,35 +127,7 @@ button.fact-checker {
   background-color: darkcyan; /* Change background color on hover */
   color: white; /* Change text color on hover */
 }
-.project-box h2 {
-  grid-column: 1 / 2; /* Title takes up the first column (1/6) */
-  margin: 0;
-  text-align: center;
-}
-
-.project-box p {
-  grid-column: 2 / 3; /* Text box takes up the second column (1/2) */
-  margin-left: 10px;
-  margin-right: 10px;
-  
-}
-
-.project-box a {
-  grid-column: 3 / 4; /* Link takes up the third column (1/6) */
-  text-align: center;
-}
-
-.project-box img {
-  grid-column: 4 / 5; /* Image takes up the fourth column (1/6) */
-  width: 100%; /* Ensure the image fits within its grid cell */
-  max-width: 150px; /* Optional: Limit the image size */
-  border-radius: 10%;
-  align-content:end;
-  display: block; 
-  margin: 0 auto;
-}
 .navbar {
-  background-color: #333;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -94,6 +136,9 @@ button.fact-checker {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-color: whitesmoke;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 .logo {
@@ -106,10 +151,12 @@ button.fact-checker {
   display: flex;
   gap: 2rem;
   align-items: center;
+  
 }
 
 .nav-links li {
   position: relative;
+  border-left: 1px white solid;
 }
 
 .nav-links li a {
@@ -235,7 +282,7 @@ button.fact-checker {
     margin: 0 auto; /* Center the image */
   }
 }
-body {
+.body {
   background-color: black;
   background-image: url("../public/resources/star_background.png");
   margin: 0;

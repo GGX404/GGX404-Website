@@ -3,7 +3,13 @@ import React, { useState } from "react";
 const FactChecker = () => {
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState("");
-
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      document.getElementById("submitQuery").click();
+    }
+  });
+  
+ 
   const handleSubmit = async () => {
     const queryReason = document.getElementById("queryReason").value;
     
@@ -39,9 +45,9 @@ const FactChecker = () => {
   };
 
   return (
-    <div className="main" style={{ margin: "20px auto", padding: "20px", maxWidth: "600px", textAlign: "center" }}>
+    <div className="main-factchecker" style={{ margin: "20px auto", padding: "20px", maxWidth: "800px", textAlign: "center" }}>
       <h1>Fact Checker</h1>
-      <p>This tool is used to fact check statements from messages. Input your message and AI will show you what was correct and what was false.</p>
+      <p id="factchecker-p">This tool is used to fact check statements from messages. Input your message and AI will show you what was correct and what was false.</p>
       
       <input
         type="text"
@@ -55,8 +61,8 @@ const FactChecker = () => {
         Submit
       </button>
       {loading && <div id="loading">Loading...</div>} {/* Loading indicator */}
-      <div id="output">{output}</div> {/* Text for the prompt answer. */}
-      <footer>
+      <div id="output" style={{ margin: "10px"}}>{output}</div> {/* Text for the prompt answer. */}
+      <footer style={{ fontSize: "12px", marginTop: "20px", color: "#888" }}>
         Disclaimer: This is AI. It can (and often will) get things wrong. Take
         it with a grain of salt.
       </footer>

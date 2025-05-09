@@ -14,7 +14,11 @@ createRoot(document.getElementById('root')).render(
         element={
           <main className="main">
             <h1>Welcome to My Portfolio</h1>
-            <ProjectBox />
+            <h2>Projects:</h2>
+            <p>Here are some of my personal and class projects.</p>
+            <div className="projects">
+              <ProjectBox /> 
+            </div>
           </main>
         }
       />
