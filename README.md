@@ -1,12 +1,30 @@
-# React + Vite
+<h1>Chase's cool little side project and personal website.</h1>
+<hr>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<b>I KNOW I MADE A MISTAKE WITH OLDER VERSIONS. DON'T HOLD ME ACCOUNTABLE.</b>
 
-Currently, two official plugins are available:
+This side project is just a idea I had a few moths back to exercise my coding ablities. Holds all my projects and work I have done in the web development space.
+<hr>
+<h2>Self host using Vite</h2>
+You will need <a href="https://vite.dev/guide/">Vite</a> with the React framework to run this locally on your own machine.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you want to replicate this using Firebase hosting, feel free to reach out to me <a href="mailto:crawchase71@gmail.com">here</a>.
 
-## Expanding the ESLint configuration
+Commands to run on Localhost:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+$ npm install
+```
+Installs all libraries required.
+```
+$ npm run dev
+```
+Starts localhost server (default port 5173)
+To access the webpage, click <a href="https://localhost:5173">this</a> link.
+
+<hr>
+<h2>Github/Workspace permissions</h2>
+
+<b>VERY IMPORTANT: THIS IS A PERSONAL PROJECT. I HAVE INSERTED SECRET KEYWORDS THROUGHOUT THE FILES. IF CAUGHT FOR PLAGIRISM, I CAN NOT BE HELD ACCOUNTABLE.</b>
+
+If I give you access to this project, please fork it. The main is for builds sent to Firebase. These are published to my personal website at <a href="https://ggx404.com">ggx404.com</a>
