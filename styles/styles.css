@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
 }
@@ -38,9 +40,8 @@ body, .navbar {
 
 
 body {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 200;
   font-style: normal;
 }
 input.fact-checker {
