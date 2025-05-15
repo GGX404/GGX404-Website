@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Chase's Site</div>
+      <div className="logo"><Link to="/" style={{textDecoration:"none", color:"white"}}>Chase's Site</Link></div>
 
       <div className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
         <span></span>
@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
-        <li><Link to="/">Home</Link></li>
+    
 
         <li
           className={`dropdown ${openDropdown === "services" ? "open" : ""}`}

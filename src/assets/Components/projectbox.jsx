@@ -9,7 +9,7 @@ const ProjectBox = ({ data }) => {
             <h2>{data.name || "Project Title"}</h2>
             <p>{data.description || "Description of the project goes here. This is a brief overview of what the project is about."}</p>
             <Link to={`${data.link || ""}`} className="project-link">View Project</Link>
-            <img src={`/resources/${data.image || ""}`} alt={"Project Image"} className="project-image" />
+            {/* <img src={`/resources/${data.image || ""}`} alt={"Project Image"} className="project-image" /> If you want pictures*/}
         </div>
     );
 };
