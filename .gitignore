@@ -25,3 +25,9 @@ dist-ssr
 *.cache
 .firebase
 node_modules
+.gitignore
+.firebaserc
+firebase.json
+package-lock.json
+vite.config.js
+functions/*

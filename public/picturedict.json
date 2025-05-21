@@ -4,11 +4,5 @@
     "description": "A small project that pulls a Gemini API from a backend server and displays the results in a simple web app.",
     "image": "fact-checker.png",
     "link": "fact-checker"
-  },
-  "other for test": {
-    "name": "Lesson 1",
-    "description": "A test item for demonstration purposes. If i theoretically fill up this entire area, my code should work.",
-    "image": "star_background.png",
-    "link": "test.html"
   }
 }

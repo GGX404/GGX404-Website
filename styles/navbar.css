@@ -34,7 +34,6 @@
     text-decoration: none;
     padding: 0.5rem;
     display: block;
-    transition: color 0.3s ease;
   }
   
   .nav-links li a:hover {
@@ -49,7 +48,7 @@
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #444;
+    background-color: black;
     top: 100%;
     left: 0;
     min-width: 160px;
@@ -81,6 +80,10 @@
     background-color: white;
     border-radius: 2px;
   }
+
+  .dropdown-menu li a {
+    color: white;
+  }
   
   @media (max-width: 768px) {
     .hamburger {
@@ -89,10 +92,10 @@
   
     .nav-links {
       flex-direction: column;
-      background-color: #333;
+      background-color: black;
       width: 100%;
       position: absolute;
-      top: 70px;
+      top: 65px;
       right: 0;
       display: none;
       text-align: center;
@@ -113,8 +116,5 @@
       box-shadow: none;
     }
   
-    .dropdown-menu li a {
-      border-top: 1px solid #444;
-    }
   }
   
