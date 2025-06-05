@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "echo 'Deploying now.' & npm run build & firebase deploy & git commit -a & git push & open https://ggx404.com",
+    "deploy:dev": "echo 'Deploying to dev.' & npm run dev & open https://localhost:5173"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
@@ -16,7 +18,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "firebase": "^11.6.1",
+    "firebase": "^11.8.1",
     "firebase-tools": "^14.2.2",
     "nvm": "^0.0.4",
     "react": "^19.0.0",

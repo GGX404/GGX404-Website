@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './assets/Components/navbar';
 import ProjectBox from './assets/Components/projectbox';
-import FactChecker from './assets/Webpages/Fact-checker/factchecker';
-
+import FactChecker from './factchecker';
+import BirthdayCard from './birthday_card';
+import PortfolioProject from './portfolio_project';
 createRoot(document.getElementById('root')).render(
   <Router>
     <Navbar />
@@ -29,6 +30,8 @@ createRoot(document.getElementById('root')).render(
         }
       />
       <Route path="/fact-checker" element={<FactChecker />} />
+      <Route path="/birthday_card" element={<BirthdayCard />} />
+      <Route path="/portfolio-project" element={<PortfolioProject />}/>
     </Routes>
   </Router>
 );

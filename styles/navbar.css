@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Departure Mono;
+  src: url("ProggyCleanSZNerdFont-Regular.ttf") format("opentype")
+}
+
 * {
     margin: 0;
     padding: 0;
