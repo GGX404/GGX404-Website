@@ -49,7 +49,10 @@ const handleRequest = async (req, res) => {
     
     const lines = responseText.split('\n');
     let modifiedResponse = lines.slice(1, -1).join('\n');
-    modifiedResponse = modifiedResponse.replace(/^"(.*)"$/, '$1');
+    // Remove quotes and asterisks
+    modifiedResponse = modifiedResponse
+      .replace(/^"(.*)"$/, '$1')
+      .replace(/\*/g, '');  // Add this line to remove all asterisks
     
     res.json({ response: modifiedResponse });
   } catch (error) {
