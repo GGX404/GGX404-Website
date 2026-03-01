@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import Footer from './footer';
+import Nav from './nav';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -46,10 +47,12 @@ const Contact = () => {
     };
 
     return(
-        <div className="flex flex-col items-center  text-center h-[92vh] bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <div className="flex flex-col items-center  text-center h-[92vh] bg-gradient-to-b from-gray-900 to-gray-800 place-content-center">
         <div className="relative">
-            <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-            <p className="text-lg mb-8">We'd love to hear from you!</p>
+            <Nav />
+            <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-300">Contact Me</h1>
+            <h1 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-green-200 mb-5"><a href='https://www.ggx404.com/'>Home</a></h1>
+
             <form className="w-full max-w-md" onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -84,6 +87,7 @@ const Contact = () => {
                 </button>
             </form>
         </div>
+        <Footer />
     </div>
     )
 }

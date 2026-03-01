@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        birthday: 'public/birthday-card.html'
       }
     }
   },
