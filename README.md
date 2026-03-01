@@ -27,8 +27,4 @@ Starts localhost server (default port 5173)
 To access the webpage, click <a href="https://localhost:5173">this</a> link.
 
 <hr>
-<h2>Github/Workspace permissions</h2>
-
-<b>VERY IMPORTANT: THIS IS A PERSONAL PROJECT. I HAVE INSERTED SECRET KEYWORDS THROUGHOUT THE FILES. IF CAUGHT FOR PLAGIRISM, I CAN NOT BE HELD ACCOUNTABLE.</b>
-
-If I give you access to this project, please fork it. The main is for builds sent to Firebase. These are published to my personal website at <a href="https://ggx404.com">ggx404.com</a>
+<h2>Uhh so my website will shut down on 3/25/2026 if i dont renew it and i am sort of broke. If it goes down, it goes down.<h2>
