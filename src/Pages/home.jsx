@@ -1,5 +1,5 @@
-import Footer from "./footer";
-import Nav from "./nav";
+import Footer from "../assets/Components/footer";
+import Nav from "../assets/Components/nav";
 const Home = () => {
     return (
         <div className='flex flex-col items-center text-center bg-gradient-to-br h-full lg:h-screen from-gray-950 to-gray-800 text-gray-100'>

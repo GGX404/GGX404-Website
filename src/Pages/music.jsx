@@ -1,8 +1,8 @@
-import Footer from "./footer";
-import Nav from "./nav";
+import Footer from "../assets/Components/footer";
+import Nav from "../assets/Components/nav";
 const Music = () => {
     return (
-        <div className='flex flex-col items-center text-center bg-gradient-to-br from-gray-950 to-gray-800 text-gray-100 h-full lg:h-screen '>
+        <div className='flex flex-col items-center text-center bg-gradient-to-br from-gray-950 to-gray-800 text-gray-100 h-full md:h-screen '>
             <div className="relative pt-20 items-center flex flex-col">
                 <Nav />
                 <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-300">Music</h1>
@@ -30,7 +30,7 @@ const Music = () => {
                                     </td>
                                     <td class="py-5 px-6 text-slate-300 font-medium">J. Cole</td>
                                     <td class="py-5 px-5">
-                                        <img src="./resources/albums/TheFallOff.png" alt="Album Cover" class="w-16 h-16 rounded-md shadow-lg border border-zinc-700 object-cover group-hover:scale-105 transition-transform" />
+                                        <img src="./resources/albums/TheFallOff.jpg" alt="Album Cover" class="w-16 h-16 rounded-md shadow-lg border border-zinc-700 object-cover group-hover:scale-105 transition-transform" />
                                     </td>
                                     <td class="py-5 px-6 text-center text-green-500 font-bold">↑</td>
                                 </tr>
@@ -54,7 +54,7 @@ const Music = () => {
                                 </tr>
                                 <tr class="hover:bg-slate-800 transition-colors group">
                                     <td class="py-5 px-6 font-black text-slate-400 text-lg">04</td>
-                                    <td class="py-5 px-6 text-slate-300 font-bold">Fine Whine</td>
+                                    <td class="py-5 px-6 text-slate-300 font-bold">Holy Ghost</td>
                                     <td class="py-5 px-6 text-slate-300 font-medium">A$AP Rocky</td>
                                     <td class="py-5 px-5">
                                         <img src="./resources/albums/AtLongLastASAP.jpg" alt="Album Cover" class="w-16 h-16 rounded-md shadow-lg border border-zinc-700 object-cover group-hover:scale-105 transition-transform" />

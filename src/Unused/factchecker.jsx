@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Example from "./assets/Components/newnav";
+import Example from "../assets/Components/Unused/newnav";
 
 const FactChecker = () => {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import "../../../styles/navbar.css"; // Adjust the path as necessary
+import "../../../../styles/navbar.css"; // Adjust the path as necessary
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
